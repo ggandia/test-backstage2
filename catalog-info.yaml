@@ -1,0 +1,95 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cw-rails-policy-service
+  title: cw-rails-policy-service
+  description: ""
+  annotations:
+    github.com/project-slug: coverwallet/cw-rails-policy-service
+    backstage.io/view-url: ""
+    backstage.io/source-location: url:https://github.com/coverwallet/cw-rails-policy-service
+    backstage.io/techdocs-ref: dir:.
+    snyk.io/org-name: pkasu-aon
+    snyk.io/project-ids: 3fba4b3f-a8e2-405a-8723-3095730fb4df,44a7bb52-f7a5-4d74-b843-10712af27d3f,8329615e-711f-4e9a-9bbf-2cabddf8cc19
+  tags:
+    - rails
+    - rails#7-0
+    - ruby
+    - ruby#3-1
+  links:
+    - title: Aonattorneys
+      url: https://policies.aonattorneys.com/
+    - title: Aonattorneys-c4a
+      url: https://policies-c4a.aonattorneys.com/
+    - title: Aondentists
+      url: https://policies.aondentists.com/
+    - title: Blanca-gl
+      url: https://www.aondigital.com/en-us/blanca-gl/policies
+    - title: C4a
+      url: https://policies-c4a.coverwallet.com/
+    - title: Cyber
+      url: https://www.aondigital.com/en-us/cyber-brokering/policies
+    - title: Cyber-aj
+      url: https://www.aondigital.com/en-us/cyber-aj/policies
+    - title: D2c
+      url: https://policies.coverwallet.com/
+    - title: Hpso
+      url: https://policies.hpsocover.com/
+    - title: Hpso-individuals
+      url: https://www.aondigital.com/en-us/hpso-individuals/policies
+    - title: Nso
+      url: https://policies.nsocover.com/
+    - title: Nso-individuals
+      url: https://www.aondigital.com/en-us/nso-individuals/policies
+    - title: Paypal
+      url: https://www.aondigital.com/en-us/paypal/policies
+    - title: Product-demo
+      url: https://www.aondigital.com/en-us/product-demo/policies
+    - title: Retail
+      url: https://policies.aoncover.com/
+    - title: Seven-eleven
+      url: https://www.aondigital.com/en-us/7eleven/policies
+    - title: Sureprotect
+      url: https://www.aondigital.com/en-us/sureprotect/policies
+    - title: Worldpay
+      url: https://www.aondigital.com/en-us/worldpay/policies
+spec:
+  type: service
+  owner: unknown
+  lifecycle: production
+  dependsOn:
+    - component:binder-frontend
+    - component:catalog
+    - component:consul
+    - component:cw-rails-sso
+    - component:cw-rails-system-insights
+    - component:cw-ruby-application-mode
+    - component:cw-ruby-carriers-config
+    - component:cw-ruby-code-quality
+    - component:cw-ruby-midas
+    - component:cw-ruby-pubsub
+    - component:cw-ruby-sidekiq-ext
+    - component:cw-tracer
+    - component:paperman
+    - component:quotes-service
+  versionedDepends:
+    cw-rails-sso: 6.0.1
+    cw-rails-system-insights: 0.4.4
+    cw-ruby-application-mode: 4.2.0
+    cw-ruby-carriers-config: 2.2.0
+    cw-ruby-pubsub: 3.1.1
+    cw-ruby-sidekiq-ext: 0.5.0
+    cw-tracer: 1.15.1
+    cw-ruby-code-quality: 0.5.3
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: Policy service API
+  description: Create a Bind Request
+spec:
+  type: openapi
+  lifecycle: production
+  owner: unknown
+  definition:
+    $text: https://github.com/coverwallet/cw-rails-policy-service/blob/master/swagger/v1/swagger.yaml
