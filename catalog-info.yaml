@@ -52,4 +52,4 @@ spec:
   lifecycle: production
   owner: unknown
   definition:
-    $text: https://github.com/coverwallet/cw-rails-policy-service/blob/master/swagger/v1/swagger.yaml
+    $text: https://github.com/ggandia/test-backstage/swagger.yaml
