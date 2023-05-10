@@ -17,8 +17,8 @@ spec:
   type: service
   owner: unknown
   lifecycle: production
-  providesApi: policy-service-api
-   - 
+  providesApi: 
+   - policy-service-api
   dependsOn:
     - component:binder-frontend
     - component:catalog
