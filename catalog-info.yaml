@@ -17,6 +17,8 @@ spec:
   type: service
   owner: unknown
   lifecycle: production
+  providesApi: policy-service-api
+   - 
   dependsOn:
     - component:binder-frontend
     - component:catalog
@@ -45,7 +47,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: Policy service API
+  name: policy-service-api
   description: Create a Bind Request
 spec:
   type: openapi
