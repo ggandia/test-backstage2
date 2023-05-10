@@ -2,6 +2,7 @@ site_name: 'policy-service-test'
 
 nav:
   - Home: index.md
+  - Due: index.md
 
 plugins:
   - techdocs-core
