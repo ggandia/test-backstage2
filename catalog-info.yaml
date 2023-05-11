@@ -54,4 +54,28 @@ spec:
   lifecycle: production
   owner: unknown
   definition:
-    $text: https://github.com/ggandia/test-backstage/blob/master/swagger.yaml
+    $text: /test-backstage/blob/master/swagger.yaml
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: policy-service-api1
+  description: Create a Bind Request
+spec:
+  type: openapi
+  lifecycle: production
+  owner: unknown
+  definition:
+    $text: /swagger.yaml
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: policy-service-api2
+  description: Create a Bind Request
+spec:
+  type: openapi
+  lifecycle: production
+  owner: unknown
+  definition:
+    $text: /blob/master/swagger.yaml
