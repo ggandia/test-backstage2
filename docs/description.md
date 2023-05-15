@@ -3,6 +3,7 @@ Test of description file
 ---
 title: Simple sample
 ---
+```mermaid
 stateDiagram-v2
     [*] --> Still
     Still --> [*]
@@ -11,3 +12,4 @@ stateDiagram-v2
     Moving --> Still
     Moving --> Crash
     Crash --> [*]
+```
