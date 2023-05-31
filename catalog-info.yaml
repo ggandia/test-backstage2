@@ -5,7 +5,7 @@ metadata:
   title: test-backstage
   description: ""
   annotations:
-    github.com/project-slug: ggandia/test-backstage
+    github.com/project-slug: default/test-backstage
     backstage.io/view-url: ""
     backstage.io/techdocs-ref: dir:.
   tags:
