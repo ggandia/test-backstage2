@@ -1,4 +1,4 @@
-site_name: 'policy-service-test'
+site_name: 'test-backstage'
 
 nav:
   - Home: index.md
