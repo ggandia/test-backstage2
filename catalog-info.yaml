@@ -54,4 +54,4 @@ spec:
   lifecycle: production
   owner: unknown
   definition:
-    $text: /swagger.yaml
+    $text: https://github.com/ggandia/test-backstage/blob/master/swagger.yaml
