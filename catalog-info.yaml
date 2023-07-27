@@ -43,15 +43,3 @@ spec:
     cw-ruby-sidekiq-ext: 0.5.0
     cw-tracer: 1.15.1
     cw-ruby-code-quality: 0.5.3
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: policy-service-api1
-  description: Create a Bind Request
-spec:
-  type: openapi
-  lifecycle: production
-  owner: unknown
-  definition:
-    $text: https://github.com/ggandia/test-backstage/blob/master/swagger.yaml
